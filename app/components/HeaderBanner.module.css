@@ -1,0 +1,19 @@
+.hamburgerLine {
+    @apply w-[24px] h-[2px] my-1.5 bg-zinc-900 block;
+}
+
+.hamburgerActive > span:nth-child(1) {
+    @apply rotate-45;
+}
+
+.hamburgerActive > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburgerActive > span:nth-child(3) {
+    @apply -rotate-45;
+}
+
+.checkbox:checked + label span {
+    @apply translate-x-6;
+}
