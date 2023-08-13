@@ -20,7 +20,11 @@ export default function HeaderBanner() {
     };
     return (
         <>
-            <div className="bg-gray-100 min-h-2 p-2 px-4 dark:text-gray-200 rounded-lg shadow-md flex justify-center relative content-center dark:bg-zinc-800 md:px-8 lg:ml-auto lg:w-4/5 lg:py-4">
+            <div
+                className={
+                    "bg-gray-100 min-h-2 p-2 px-4 dark:text-gray-200 rounded-lg shadow-md flex justify-center relative content-center dark:bg-zinc-800 md:px-8 lg:ml-auto lg:w-4/5 lg:py-4"
+                }
+            >
                 <div className="flex items-center absolute left-5 top-8 md:left-8 lg:hidden">
                     <button className="block absolute" onClick={hamburgerClick}>
                         <span
@@ -51,7 +55,10 @@ export default function HeaderBanner() {
                         for="checkbox"
                         class="bg-zinc-900 w-[50px] h-[26px] flex rounded-full relative p-1.5 cursor-pointer justify-between content-center"
                     >
-                        <FontAwesomeIcon icon={faMoon} />
+                        <FontAwesomeIcon
+                            icon={faMoon}
+                            className={"text-gray-200"}
+                        />
                         <FontAwesomeIcon icon={faSun} color="#f39c12" />
                         <span class="bg-white w-[22px] h-[22px] absolute top-[2px] left-[2px] origin-top-left rounded-full transition transform duration-200 transition-linear block"></span>
                     </label>
