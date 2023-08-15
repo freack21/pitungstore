@@ -58,11 +58,11 @@ export default function HeaderBanner() {
                         htmlFor="checkbox"
                         className="bg-zinc-900 w-[50px] h-[26px] flex rounded-full relative p-1.5 cursor-pointer justify-between content-center"
                     >
+                        <FontAwesomeIcon icon={faSun} color="#f39c12" />
                         <FontAwesomeIcon
                             icon={faMoon}
                             className={"text-gray-200"}
                         />
-                        <FontAwesomeIcon icon={faSun} color="#f39c12" />
                         <span className="bg-white w-[22px] h-[22px] absolute top-[2px] left-[2px] origin-top-left rounded-full transition transform duration-200 transition-linear block"></span>
                     </label>
                 </div>

@@ -13,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="id" className="dark">
+        <html lang="id">
             <body className={rubik.className}>{children}</body>
         </html>
     );

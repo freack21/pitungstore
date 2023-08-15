@@ -60,13 +60,13 @@ export default function HomeSlider({}) {
         setCurrentIndex(newIndex);
     };
     return (
-        <div className="w-full max-w-[1440px] h-[240px] lg:h-[480px] m-auto group relative py-4 px-2 lg:px-4">
+        <div className="w-full max-w-[1440px] h-[240px] lg:h-[480px] m-auto relative py-4 px-2 lg:px-4 group">
             <div
                 className="w-full h-full bg-center bg-cover duration-100 rounded-xl bg-neutral-300 dark:bg-zinc-900"
                 style={{ backgroundImage: `url(${slides[currentIndex].img})` }}
             >
                 <div className="w-full h-full dark:bg-black/20 rounded-xl flex items-center flex-col justify-center px-12 py-2 lg:px-32">
-                    <h1 className="text-xl lg:text-2xl font-bold p-1 px-4 rounded-lg bg-gray-50/50 text-zinc-800 dark:bg-black/40 dark:text-gray-50">
+                    <h1 className="text-xl lg:text-2xl font-bold p-1 px-4 rounded-lg bg-gray-50/50 text-zinc-800 dark:bg-black/40 dark:text-gray-50 tracking-wider">
                         {slides[currentIndex].title}
                     </h1>
                     <p className="text-sm lg:text-md font-normal p-2 rounded-md bg-gray-50/50 text-zinc-800 dark:bg-black/40 dark:text-gray-50 mt-2 lg:mt-8 text-center max-h-[120px] overflow-hidden">
@@ -74,16 +74,20 @@ export default function HomeSlider({}) {
                     </p>
                 </div>
             </div>
-            <FontAwesomeIcon
-                icon={faChevronLeft}
-                className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-4 lg:left-8 p-2 rounded-full w-4 h-4 text-white dark:text-zinc-900 bg-black/20 dark:bg-white/50 cursor-pointer"
-                onClick={prevSlide}
-            />
-            <FontAwesomeIcon
-                icon={faChevronRight}
-                className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-4 lg:right-8 p-2 rounded-full w-4 h-4 text-white dark:text-zinc-900 bg-black/20 dark:bg-white/50 cursor-pointer"
-                onClick={nextSlide}
-            />
+            <div className="hidden group-hover:block">
+                <FontAwesomeIcon
+                    icon={faChevronLeft}
+                    className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-4 lg:left-8 p-2 rounded-full w-4 h-4 text-white dark:text-zinc-900 bg-black/20 dark:bg-white/50 cursor-pointer"
+                    onClick={prevSlide}
+                />
+            </div>
+            <div className="hidden group-hover:block">
+                <FontAwesomeIcon
+                    icon={faChevronRight}
+                    className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-4 lg:right-8 p-2 rounded-full w-4 h-4 text-white dark:text-zinc-900 bg-black/20 dark:bg-white/50 cursor-pointer"
+                    onClick={nextSlide}
+                />
+            </div>
             <div className="flex justify-center py-2">
                 {slides.map((slide, i) => (
                     <FontAwesomeIcon
