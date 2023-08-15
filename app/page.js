@@ -5,9 +5,9 @@ export default function Home() {
     return (
         <div className="bg-gray-200 p-4 min-h-screen dark:bg-zinc-900">
             <HeaderBanner />
-            <div className=" lg:ml-auto lg:w-4/5 ">
+            <main className=" lg:ml-auto lg:w-4/5 ">
                 <HomeSlider />
-            </div>
+            </main>
         </div>
     );
 }
