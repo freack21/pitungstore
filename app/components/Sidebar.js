@@ -56,7 +56,7 @@ export default function Sidebar({ hidden, handlerCloseButton }) {
     ];
     return (
         <div
-            className={`min-h-screen w-1/5 absolute top-0 left-0 flex-col items-center shadow  transition duration-300 bg-gray-100 dark:bg-zinc-800 ${
+            className={`min-h-screen w-1/5 absolute top-0 left-0 flex-col items-center shadow  transition duration-300 bg-gray-50 dark:bg-zinc-800 ${
                 hidden
                     ? "max-md:-translate-x-full"
                     : "max=md:ml-0 max-md:translate-x-0"
@@ -80,13 +80,13 @@ export default function Sidebar({ hidden, handlerCloseButton }) {
                     onClick={handlerCloseButton}
                 >
                     <span
-                        className={`${HeaderBannerStyle.hamburgerLine} origin-top-left transition ease-in-out duration-300 dark:bg-gray-100`}
+                        className={`${HeaderBannerStyle.hamburgerLine} origin-top-left transition ease-in-out duration-300 dark:bg-gray-50`}
                     ></span>
                     <span
-                        className={`${HeaderBannerStyle.hamburgerLine} transition ease-in-out duration-300 dark:bg-gray-100`}
+                        className={`${HeaderBannerStyle.hamburgerLine} transition ease-in-out duration-300 dark:bg-gray-50`}
                     ></span>
                     <span
-                        className={`${HeaderBannerStyle.hamburgerLine} origin-bottom-left transition ease-in-out duration-300 dark:bg-gray-100`}
+                        className={`${HeaderBannerStyle.hamburgerLine} origin-bottom-left transition ease-in-out duration-300 dark:bg-gray-50`}
                     ></span>
                 </button>
             </div>

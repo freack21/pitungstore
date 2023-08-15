@@ -22,19 +22,19 @@ export default function HeaderBanner() {
         <>
             <div
                 className={
-                    "bg-gray-100 min-h-2 p-2 dark:text-gray-200 rounded-lg shadow-md flex justify-center relative content-center dark:bg-zinc-800 md:px-8 lg:ml-auto lg:w-4/5 lg:py-4"
+                    "bg-gray-50 min-h-2 p-2 dark:text-gray-200 rounded-lg shadow-md flex justify-center relative content-center dark:bg-zinc-800 md:px-8 lg:ml-auto lg:w-4/5 lg:py-4"
                 }
             >
                 <div className="flex items-center absolute left-5 top-8 md:left-8 lg:hidden">
                     <button className="block absolute" onClick={hamburgerClick}>
                         <span
-                            className={`${HeaderBannerStyle.hamburgerLine} origin-top-left transition ease-in-out duration-300 dark:bg-gray-100`}
+                            className={`${HeaderBannerStyle.hamburgerLine} origin-top-left transition ease-in-out duration-300 dark:bg-gray-50`}
                         ></span>
                         <span
-                            className={`${HeaderBannerStyle.hamburgerLine} transition ease-in-out duration-300 dark:bg-gray-100`}
+                            className={`${HeaderBannerStyle.hamburgerLine} transition ease-in-out duration-300 dark:bg-gray-50`}
                         ></span>
                         <span
-                            className={`${HeaderBannerStyle.hamburgerLine} origin-bottom-left transition ease-in-out duration-300 dark:bg-gray-100`}
+                            className={`${HeaderBannerStyle.hamburgerLine} origin-bottom-left transition ease-in-out duration-300 dark:bg-gray-50`}
                         ></span>
                     </button>
                 </div>
@@ -55,7 +55,7 @@ export default function HeaderBanner() {
                         id="checkbox"
                     />
                     <label
-                        for="checkbox"
+                        htmlFor="checkbox"
                         className="bg-zinc-900 w-[50px] h-[26px] flex rounded-full relative p-1.5 cursor-pointer justify-between content-center"
                     >
                         <FontAwesomeIcon
