@@ -50,20 +50,20 @@ export default function HeaderBanner() {
                 <div className="absolute right-5 top-5 lg:right-8 lg:top-7">
                     <input
                         type="checkbox"
-                        class={`opacity-0 ${HeaderBannerStyle.checkbox} absolute`}
+                        className={`opacity-0 ${HeaderBannerStyle.checkbox} absolute`}
                         onChange={changeTheme}
                         id="checkbox"
                     />
                     <label
                         for="checkbox"
-                        class="bg-zinc-900 w-[50px] h-[26px] flex rounded-full relative p-1.5 cursor-pointer justify-between content-center"
+                        className="bg-zinc-900 w-[50px] h-[26px] flex rounded-full relative p-1.5 cursor-pointer justify-between content-center"
                     >
                         <FontAwesomeIcon
                             icon={faMoon}
                             className={"text-gray-200"}
                         />
                         <FontAwesomeIcon icon={faSun} color="#f39c12" />
-                        <span class="bg-white w-[22px] h-[22px] absolute top-[2px] left-[2px] origin-top-left rounded-full transition transform duration-200 transition-linear block"></span>
+                        <span className="bg-white w-[22px] h-[22px] absolute top-[2px] left-[2px] origin-top-left rounded-full transition transform duration-200 transition-linear block"></span>
                     </label>
                 </div>
             </div>

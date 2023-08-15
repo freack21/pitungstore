@@ -2,6 +2,7 @@
 import {
     faChevronLeft,
     faChevronRight,
+    faCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
@@ -50,7 +51,19 @@ export default function HomeSlider({}) {
                 className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-3 lg:right-8 p-2 rounded-full w-4 h-4 text-white dark:text-black bg-black/20 dark:bg-white/20 cursor-pointer"
                 onClick={nextSlide}
             />
-            {/* {items.map((item, i) => {})} */}
+            <div className="flex justify-center py-2">
+                {slides.map((slide, i) => (
+                    <FontAwesomeIcon
+                        key={i}
+                        icon={faCircle}
+                        className={`text-zinc-400 dark:text-gray-500 w-2 h-2 mx-0.5 ${
+                            currentIndex == i &&
+                            "text-zinc-800 dark:text-gray-100"
+                        } cursor-pointer`}
+                        onClick={() => setCurrentIndex(i)}
+                    />
+                ))}
+            </div>
         </div>
     );
 }
