@@ -13,7 +13,10 @@ export default function ButtonSidebar({ link, icon, text, active }) {
                     active && " bg-zinc-800 shadow dark:bg-zinc-700"
                 }`}
             >
-                <FontAwesomeIcon icon={icon} className="text-lg w-[32px]" />
+                <FontAwesomeIcon
+                    icon={icon}
+                    className={`text-lg w-[32px] ${active && "text-gray-100"}`}
+                />
                 <p className={`ml-4 ${active && "text-gray-100"}`}>{text}</p>
             </div>
         </Link>

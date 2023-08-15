@@ -60,7 +60,7 @@ export default function Sidebar({ hidden, handlerCloseButton }) {
                 hidden
                     ? "max-md:-translate-x-full"
                     : "max=md:ml-0 max-md:translate-x-0"
-            } lg:flex max-md:w-1/2 max-sm:w-2/3`}
+            } lg:flex max-md:w-1/2 max-sm:w-2/3 z-50`}
         >
             <Link href={"/"}>
                 <Image
@@ -68,6 +68,9 @@ export default function Sidebar({ hidden, handlerCloseButton }) {
                     width={150}
                     height={72}
                     alt="Logo"
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg..."
                     className="m-4 my-6"
                 />
             </Link>
@@ -88,7 +91,7 @@ export default function Sidebar({ hidden, handlerCloseButton }) {
                 </button>
             </div>
 
-            <h2 className="w-full px-4 uppercase mt-3 text-zinc-500 dark:text-gray-400">
+            <h2 className="w-full px-4 uppercase mt-3 text-zinc-400 dark:text-gray-400">
                 <strong>Dashboard</strong>
             </h2>
             <ul className="block w-full px-3">
@@ -102,7 +105,7 @@ export default function Sidebar({ hidden, handlerCloseButton }) {
                     </li>
                 ))}
             </ul>
-            <h2 className="w-full px-4 uppercase mt-4 text-zinc-500 dark:text-gray-400">
+            <h2 className="w-full px-4 uppercase mt-4 text-zinc-400 dark:text-gray-400">
                 <strong>Pusat Bantuan</strong>
             </h2>
             <ul className="block w-full px-3">

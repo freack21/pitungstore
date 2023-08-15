@@ -22,7 +22,7 @@ export default function HeaderBanner() {
         <>
             <div
                 className={
-                    "bg-gray-100 min-h-2 p-2 px-4 dark:text-gray-200 rounded-lg shadow-md flex justify-center relative content-center dark:bg-zinc-800 md:px-8 lg:ml-auto lg:w-4/5 lg:py-4"
+                    "bg-gray-100 min-h-2 p-2 dark:text-gray-200 rounded-lg shadow-md flex justify-center relative content-center dark:bg-zinc-800 md:px-8 lg:ml-auto lg:w-4/5 lg:py-4"
                 }
             >
                 <div className="flex items-center absolute left-5 top-8 md:left-8 lg:hidden">
@@ -42,9 +42,12 @@ export default function HeaderBanner() {
                     src={"/images/logo.png"}
                     width={120}
                     height={60}
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg..."
                     alt="Logo"
                 />
-                <div className="absolute right-5 top-5">
+                <div className="absolute right-5 top-5 lg:right-8 lg:top-7">
                     <input
                         type="checkbox"
                         class={`opacity-0 ${HeaderBannerStyle.checkbox} absolute`}
