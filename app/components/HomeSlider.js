@@ -66,7 +66,7 @@ export default function HomeSlider({}) {
                 style={{ backgroundImage: `url(${slides[currentIndex].img})` }}
             >
                 <div className="w-full h-full dark:bg-black/20 rounded-xl flex items-center flex-col justify-center px-12 py-2 lg:px-32">
-                    <h1 className="text-xl lg:text-2xl font-bold p-1 px-4 rounded-lg bg-gray-50/50 text-zinc-800 dark:bg-black/40 dark:text-gray-50">
+                    <h1 className="text-xl lg:text-2xl font-bold p-1 px-4 rounded-lg bg-gray-50/50 text-zinc-800 dark:bg-black/40 dark:text-gray-50 tracking-wider">
                         {slides[currentIndex].title}
                     </h1>
                     <p className="text-sm lg:text-md font-normal p-2 rounded-md bg-gray-50/50 text-zinc-800 dark:bg-black/40 dark:text-gray-50 mt-2 lg:mt-8 text-center max-h-[120px] overflow-hidden">
